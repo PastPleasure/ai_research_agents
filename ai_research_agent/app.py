@@ -17,7 +17,7 @@ topic = st.text_input("Enter a research topic:", placeholder="e.g. Top AI startu
 if st.button("Run AI Agents") and topic:
     with st.spinner("Running autonomous workflow... this may take 30–60 seconds"):
         try:
-            result = subprocess.check_output(["python3", "research_agent.py", "--topic", topic], text=True, stderr=subprocess.STDOUT)
+            result = subprocess.check_output(["python3", "ai_research_agent/research_agent.py", "--topic", topic], text=True, stderr=subprocess.STDOUT)
             article = extract_blog(result)
             st.success("Done!")
             st.markdown("### 🧠 Blog Output")
