@@ -1,0 +1,30 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Output logs / data
+memory.jsonl
+agent_outputs/
+
+# Environment + secrets
+.env
+.env.*
+
+# Git stuff
+.git/
+.gitignore
+
+# OS + IDE files
+.DS_Store
+*.swp
+*.bak
+*.tmp
+.idea/
+.vscode/
+
+# README and markdown files (optional, unless needed)
+*.md
