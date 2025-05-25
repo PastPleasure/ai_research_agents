@@ -1,6 +1,18 @@
 
 import streamlit as st
 import subprocess
+import os
+import sys
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+
+print("✅ App is starting...")
+print("🔧 Python version:", sys.version)
+print("📂 Current directory:", os.getcwd())
+print("📁 Files in current directory:", os.listdir())
+print("🔑 OPENAI:", bool(os.getenv("OPENAI_API_KEY")))
+print("🔑 SERPAPI:", bool(os.getenv("SERPAPI_API_KEY")))
 
 def extract_blog(text):
     start = text.find("**Title:")
