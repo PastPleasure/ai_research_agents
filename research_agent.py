@@ -10,7 +10,7 @@ parser.add_argument('--topic', type=str, help='Topic for the agents')
 args = parser.parse_args()
 topic = args.topic if args.topic else "AI startups 2024"
 
-load_dotenv(dotenv_path="../keys.env")  # Adjust the path to your .env file
+# load_dotenv(dotenv_path="")  # Adjust the path to your .env file
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 os.environ["SERPAPI_API_KEY"] = os.getenv("SERPAPI_API_KEY")
 
