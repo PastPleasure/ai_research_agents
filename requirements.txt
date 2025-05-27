@@ -5,3 +5,4 @@ serpapi
 python-dotenv
 beautifulsoup4
 requests
+streamlit
